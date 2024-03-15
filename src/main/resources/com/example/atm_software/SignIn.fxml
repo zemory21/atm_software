@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #003;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_software.HelloController">
+  <children>
+    <AnchorPane layoutY="86.0" prefHeight="364.0" prefWidth="700.0" style="-fx-background-color: #dddd;">
+      <children>
+        <Button fx:id="ControllerSingInEnter" layoutX="208.0" layoutY="167.0" mnemonicParsing="false" text="Войти">
+          <font>
+            <Font name="Comfortaa Regular" size="15.0" />
+          </font>
+        </Button>
+        <Label layoutX="208.0" layoutY="14.0" text="Авторизация" textFill="WHITE">
+          <font>
+            <Font name="Comfortaa Regular" size="38.0" />
+          </font>
+        </Label>
+        <TextField fx:id="ControllerSingInPhone" layoutX="207.0" layoutY="83.0" prefHeight="33.0" prefWidth="284.0" promptText="Номер телефона" style="-fx-background-color: #dddd; -fx-border-color: #003; -fx-border-radius: 5;">
+          <font>
+            <Font name="Comfortaa Regular" size="14.0" />
+          </font>
+        </TextField>
+        <PasswordField fx:id="ControllerSingInPinCode" layoutX="207.0" layoutY="125.0" prefHeight="33.0" prefWidth="284.0" promptText="PIN-КОД" style="-fx-background-color: #dddd; -fx-border-color: #003; -fx-border-radius: 5;">
+          <font>
+            <Font name="Comfortaa Regular" size="14.0" />
+          </font>
+        </PasswordField>
+        <Button fx:id="ControllerSingInRegister" layoutX="292.0" layoutY="167.0" mnemonicParsing="false" text="Зарегистрироваться">
+          <font>
+            <Font name="Comfortaa Regular" size="15.0" />
+          </font>
+        </Button>
+      </children></AnchorPane>
+    <Label layoutX="241.0" layoutY="23.0" text="Банкомат" textFill="WHITE">
+      <font>
+        <Font name="Comfortaa Regular" size="38.0" />
+      </font>
+    </Label>
+  </children>
+</AnchorPane>
