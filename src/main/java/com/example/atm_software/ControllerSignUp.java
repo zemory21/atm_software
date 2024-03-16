@@ -37,11 +37,12 @@ public class ControllerSignUp {
     @FXML
     void initialize() {
 
-        DatabaseHandler dbHandler = new DatabaseHandler();
+/*        DatabaseHandler dbHandler = new DatabaseHandler();
         ControllerSignUpRegister.setOnAction(actionEvent -> {
             dbHandler.signUpUser(ControllerSignUpFisrstName.getText(), ControllerSignUpLastName.getText(), ControllerSignUpSureName.getText(), ControllerSignUpPinKod.getText(),
                     ControllerSignUpPinKod.getText());
         });
+*/
     }
 
 }
