@@ -1,6 +1,7 @@
 package com.example.atm_software;
 
 import java.net.URL;
+import java.sql.Statement;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -36,13 +37,10 @@ public class ControllerSignUp {
 
     @FXML
     void initialize() {
-
-/*        DatabaseHandler dbHandler = new DatabaseHandler();
-        ControllerSignUpRegister.setOnAction(actionEvent -> {
-            dbHandler.signUpUser(ControllerSignUpFisrstName.getText(), ControllerSignUpLastName.getText(), ControllerSignUpSureName.getText(), ControllerSignUpPinKod.getText(),
-                    ControllerSignUpPinKod.getText());
+        Main db = new Main();
+        ControllerSignUpRegister.setOnAction(event -> {
+            db.signUpUser("7",ControllerSignUpLastName.getText(), ControllerSignUpFisrstName.getText(),ControllerSignUpSureName.getText(),ControllerSignUpPhoneNumber.getText(),ControllerSignUpPinKod.getText());
         });
-*/
     }
 
 }

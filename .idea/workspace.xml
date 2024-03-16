@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="Соловьев">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/database/Main.java" afterDir="false" />
+    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="Вроде как подключил базу данных, но еще не факт">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/Const.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/Const.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/database/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.HelloApplication.executor": "Debug",
+    "Application.HelloApplication.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -81,6 +81,11 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.atm_software" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.atm_software.HelloApplication" />
@@ -133,12 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710537093708</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Вроде как подключил базу данных, но еще не факт">
+      <option name="closed" value="true" />
+      <created>1710624186269</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710624186269</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Соловьев" />
-    <option name="LAST_COMMIT_MESSAGE" value="Соловьев" />
+    <MESSAGE value="Вроде как подключил базу данных, но еще не факт" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вроде как подключил базу данных, но еще не факт" />
   </component>
 </project>
