@@ -39,7 +39,7 @@ public class HelloController {
             String phoneNumber = ControllerSingInPhone.getText().trim();
             String signInPinKod = ControllerSingInPinCode.getText().trim();
             if (!phoneNumber.equals("") && signInPinKod.equals("")) {
-                loginUser(phoneNumber,signInPinKod);
+                loginUser(phoneNumber, signInPinKod);
             } else {
                 System.out.println("Одно или несколько полей пустые!");
             }
