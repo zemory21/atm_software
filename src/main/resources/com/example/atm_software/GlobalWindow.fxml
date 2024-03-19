@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -20,7 +19,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="ControllrGlobalSendAnotherBank" layoutX="179.0" layoutY="214.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="340.0" text="Отправить в другой банк">
+            <Button fx:id="ControllrGlobalSendAnotherBank" layoutX="179.0" layoutY="214.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="340.0" text="Перевод">
                <font>
                   <Font size="24.0" />
                </font>
@@ -35,8 +34,12 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <TextField fx:id="ControllerGlobalScore" layoutX="307.0" layoutY="14.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #dddd; -fx-border-color: #003;" />
             <Label layoutX="237.0" layoutY="14.0" text="Счет:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="14.0" prefHeight="35.0" prefWidth="166.0">
                <font>
                   <Font size="24.0" />
                </font>
