@@ -9,7 +9,7 @@
     <children>
         <AnchorPane layoutY="86.0" prefHeight="364.0" prefWidth="700.0" style="-fx-background-color: #dddd;">
             <children>
-                <Button fx:id="ControllerSingInEnter" layoutX="17.0" layoutY="149.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="245.0" text="Мобильная связь">
+                <Button fx:id="ControllerToPayMComm" layoutX="17.0" layoutY="149.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="245.0" text="Мобильная связь">
                     <font>
                         <Font size="22.0" />
                     </font>
@@ -19,12 +19,12 @@
                         <Font name="Comfortaa Regular" size="38.0" />
                     </font>
                 </Label>
-                <Button fx:id="ControllerSingInRegister" layoutX="296.0" layoutY="150.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="176.0" text="По бан.карте">
+                <Button fx:id="ControllerToPayCard" layoutX="296.0" layoutY="150.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="176.0" text="По бан.карте">
                     <font>
                         <Font size="22.0" />
                     </font>
                 </Button>
-            <Button fx:id="ControllerSingInRegister1" layoutX="504.0" layoutY="150.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="176.0" text="В другой банк">
+            <Button fx:id="ControllerToPayBank" layoutX="504.0" layoutY="150.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="176.0" text="В другой банк">
                <font>
                   <Font size="22.0" />
                </font>

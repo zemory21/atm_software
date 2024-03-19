@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerInsert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerTakeOff.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerToPay.java" afterDir="false" />
+    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerToPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerToPay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/ToPay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/ToPay.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloController.java" root0="SKIP_INSPECTION" />
@@ -128,13 +127,22 @@
       <option name="project" value="LOCAL" />
       <updated>1710827417086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="3">
+      <option name="closed" value="true" />
+      <created>1710831562595</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710831562595</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="просто" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
 </project>
