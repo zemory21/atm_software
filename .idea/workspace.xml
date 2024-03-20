@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="3">
+    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="Сделал регистрацию(Соловьев)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/dbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/dbConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710628296499</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Сделал регистрацию(Соловьев)">
+      <option name="closed" value="true" />
+      <created>1710958366790</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710958366790</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +183,8 @@
     <MESSAGE value="Соловьев" />
     <MESSAGE value="Вроде как подключил базу данных, но еще не факт" />
     <MESSAGE value="пытался сделать заполнение бд с помощью формы" />
-    <option name="LAST_COMMIT_MESSAGE" value="пытался сделать заполнение бд с помощью формы" />
+    <MESSAGE value="Сделал регистрацию(Соловьев)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал регистрацию(Соловьев)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
