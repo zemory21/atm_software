@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="Сделал регистрацию(Соловьев)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/dbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/dbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/SignIn.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
       </list>
     </recent_temporary>
