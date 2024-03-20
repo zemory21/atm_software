@@ -36,6 +36,7 @@ public class HelloController {
     @FXML
     void initialize() {
         ControllerSingInEnter.setOnAction(actionEvent -> {
+            
             String phoneNumber = ControllerSingInPhone.getText().trim();
             String signInPinKod = ControllerSingInPinCode.getText().trim();
             if (!phoneNumber.equals("") && signInPinKod.equals("")) {
