@@ -4,9 +4,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-public class ControllerHistory {
+public class ControllerBankCard {
 
     @FXML
     private ResourceBundle resources;
@@ -18,11 +18,16 @@ public class ControllerHistory {
     private Button CloseButton;
 
     @FXML
-    private Label LabelHistory;
+    private Button TakeOffButton;
+
+    @FXML
+    private TextField TextCardNumber;
+
+    @FXML
+    private TextField TextCards;
 
     @FXML
     void initialize() {
-
     }
 
 }

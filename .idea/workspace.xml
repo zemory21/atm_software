@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="3">
+    <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="f">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerBankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerMobConn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerOtherBank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerOtherSum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/History.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/History.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/TakeOff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/TakeOff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/Mob.swaz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/MobConnection.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/Po ban.carte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/BankCard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/W drugoj bank.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/OtherBank.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/другая сумма.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/OtherSum.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710833767408</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="f">
+      <option name="closed" value="true" />
+      <created>1711086416027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711086416027</updated>
+    </task>
+    <task id="LOCAL-00007" summary="f">
+      <option name="closed" value="true" />
+      <created>1711086426584</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711086426584</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +183,7 @@
     <MESSAGE value="просто" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="f" />
+    <option name="LAST_COMMIT_MESSAGE" value="f" />
   </component>
 </project>

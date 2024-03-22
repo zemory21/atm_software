@@ -5,8 +5,9 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
-public class ControllerHistory {
+public class ControllerOtherSum {
 
     @FXML
     private ResourceBundle resources;
@@ -15,10 +16,13 @@ public class ControllerHistory {
     private URL location;
 
     @FXML
-    private Button CloseButton;
+    private Label ControllerSingInEnter;
 
     @FXML
-    private Label LabelHistory;
+    private Button TakeOff;
+
+    @FXML
+    private TextField TextOtherSum;
 
     @FXML
     void initialize() {
