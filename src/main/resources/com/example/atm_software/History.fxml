@@ -19,7 +19,7 @@
             <Font name="Comfortaa Regular" size="15.0" />
           </font>
         </Button>
-            <Label fx:id="LabelHistory" layoutX="230.0" layoutY="63.0" prefHeight="39.0" prefWidth="240.0" style="-fx-background-color: #dd;" />
+            <Label fx:id="LabelHistory" layoutX="230.0" layoutY="63.0" prefHeight="39.0" prefWidth="240.0" style="-fx-background-color: #ddd;" />
       </children></AnchorPane>
     <Label layoutX="267.0" layoutY="25.0" text="Банкомат" textFill="WHITE">
       <font>
