@@ -7,14 +7,18 @@ public class User {
     private String phoneNumber;
     private String pinKod;
 
-    public User(){}
-    public User(String lastname, String firstname, String surname, String phoneNumber, String pinKod) {
+
+    public User(String phoneNumber, String pinKod) {
+        this.phoneNumber = phoneNumber;
+        this.pinKod = pinKod;
+    }
+    /*public User(String lastname, String firstname, String surname, String phoneNumber, String pinKod) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
         this.pinKod = pinKod;
-    }
+    }*/
 
     public String getLastname() {
         return lastname;

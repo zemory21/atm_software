@@ -8,7 +8,7 @@ public class dbConnection {
     static final String username = "root";
     static final String password = "12341324";
 
-    public void singUpUser(User user) {
+    public void singUpUser(String lastname, String firstname, String surname, String phonenumber, String pinkod) {
         //Подключение к базе данных
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Connecting to database...");
@@ -23,11 +23,11 @@ public class dbConnection {
                     Const.USER_PINKOD + ")" + "VALUES(?,?,?,?,?)";
             // Выполнение запроса
             var prSt = connection.prepareStatement(request);
-            prSt.setString(1, user.getLastname());
-            prSt.setString(2, user.getFirstname());
-            prSt.setString(3, user.getSurname());
-            prSt.setString(4, user.getPhoneNumber());
-            prSt.setString(5, user.getPinKod());
+            prSt.setString(1, lastname);
+            prSt.setString(2, firstname);
+            prSt.setString(3, surname);
+            prSt.setString(4, phonenumber);
+            prSt.setString(5, pinkod);
 
             prSt.executeUpdate();
             // Закрытие конекта к базе данных
@@ -38,8 +38,7 @@ public class dbConnection {
         }
     }
 
-    public ResultSet getUser(User user) {
-        ResultSet resSet = null;
+    public User getUser(String phoneNumber, String pinKod) {
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Connecting to database...");
             if (!connection.isClosed()) {
@@ -47,22 +46,25 @@ public class dbConnection {
             } else {
                 System.out.println("There is no connection!");
             }
-            // Создание запроса
-            String select = "SELECT * FROM " + Const.USER_TABLE + " WHERE " +
-                    Const.USER_PHONENUMBER + "=? AND " + Const.USER_PINKOD + "=?";
-            // Выполнение запроса
-            var prSt = connection.prepareStatement(select);
-            prSt.setString(1, user.getPhoneNumber());
-            prSt.setString(2, user.getPinKod());
+            String insert = "SELECT * FROM users WHERE phoneNumber =? AND pinKod =?";
+            var prst = connection.prepareStatement(insert);
+            prst.setString(1, phoneNumber);
+            prst.setString(2, pinKod);
+            ResultSet resultSet = prst.executeQuery();
 
-            resSet = prSt.executeQuery();
-            // Закрытие конекта к базе данных
-//            connection.close();
+            if (resultSet.next()) {
+                return new User(
+                        resultSet.getString(5),
+                        resultSet.getString(6));
+            } else {
+                return null;
+            }
+
         } catch (SQLException e) {
             System.out.println("Error connecting to database: " + e.getMessage());
             e.printStackTrace();
+            return null;
         }
-        return resSet;
     }
 
 }

@@ -63,10 +63,9 @@ public class ControllerSignUp {
     private void signUpNewUsers() {
         dbConnection conn = new dbConnection();
 
-        User user = new User(ControllerSignUpLastName.getText(), ControllerSignUpFisrstName.getText(),
+        conn.singUpUser(ControllerSignUpLastName.getText(), ControllerSignUpFisrstName.getText(),
                 ControllerSignUpSureName.getText(), ControllerSignUpPhoneNumber.getText(), ControllerSignUpPinKod.getText());
 
-        conn.singUpUser(user);
     }
 
 

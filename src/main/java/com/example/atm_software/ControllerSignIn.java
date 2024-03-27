@@ -67,24 +67,14 @@ public class ControllerSignIn {
         });
     }
 
-    private void loginUser(String phoneNumber, String signInPinKod){
-        dbConnection dbSignIn = new dbConnection();
-        User user = new User();
-        user.setPhoneNumber(phoneNumber);
-        user.setPinKod(signInPinKod);
-        ResultSet receiving = dbSignIn.getUser(user);
+    private void loginUser(String phoneNumber, String signInPinKod) {
+        dbConnection conn = new dbConnection();
 
-        int counter = 0;
-            while (true) {
-                try {
-                    if (!receiving.next()) break;
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-                counter++;
-            }
-        if (counter >= 1) {
-            System.out.println("Success!");
+        User user = conn.getUser(phoneNumber, signInPinKod);
+        if (user != null) {
+            System.out.println("Пользователь авторизован!");
+        } else {
+            System.out.println("Пользователь не найден!");
         }
     }
 }
