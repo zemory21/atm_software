@@ -8,7 +8,7 @@ public class dbConnection {
     static final String username = "root";
     static final String password = "12341324";
 
-    public void singUpUser(String lastname, String firstname, String surname, String phoneNumber, String pinKod) {
+    public void singUpUser(User user) {
         //Подключение к базе данных
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Connecting to database...");
@@ -23,19 +23,46 @@ public class dbConnection {
                     Const.USER_PINKOD + ")" + "VALUES(?,?,?,?,?)";
             // Выполнение запроса
             var prSt = connection.prepareStatement(request);
-            prSt.setString(1, lastname);
-            prSt.setString(2, firstname);
-            prSt.setString(3, surname);
-            prSt.setString(4, phoneNumber);
-            prSt.setString(5, pinKod);
+            prSt.setString(1, user.getLastname());
+            prSt.setString(2, user.getFirstname());
+            prSt.setString(3, user.getSurname());
+            prSt.setString(4, user.getPhoneNumber());
+            prSt.setString(5, user.getPinKod());
 
             prSt.executeUpdate();
             // Закрытие конекта к базе данных
-            connection.isClosed();
+//            connection.close();
         } catch (SQLException e) {
             System.out.println("Error connecting to database: " + e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    public ResultSet getUser(User user) {
+        ResultSet resSet = null;
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Connecting to database...");
+            if (!connection.isClosed()) {
+                System.out.println("Connected successfully!");
+            } else {
+                System.out.println("There is no connection!");
+            }
+            // Создание запроса
+            String select = "SELECT * FROM " + Const.USER_TABLE + " WHERE " +
+                    Const.USER_PHONENUMBER + "=? AND " + Const.USER_PINKOD + "=?";
+            // Выполнение запроса
+            var prSt = connection.prepareStatement(select);
+            prSt.setString(1, user.getPhoneNumber());
+            prSt.setString(2, user.getPinKod());
+
+            resSet = prSt.executeQuery();
+            // Закрытие конекта к базе данных
+//            connection.close();
+        } catch (SQLException e) {
+            System.out.println("Error connecting to database: " + e.getMessage());
+            e.printStackTrace();
+        }
+        return resSet;
     }
 
 }

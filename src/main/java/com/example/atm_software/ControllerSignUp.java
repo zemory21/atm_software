@@ -42,12 +42,9 @@ public class ControllerSignUp {
 
     @FXML
     void initialize() {
-        dbConnection conn = new dbConnection();
+
         ControllerSignUpRegister.setOnAction(event -> {
-            conn.singUpUser(ControllerSignUpLastName.getText(), ControllerSignUpFisrstName.getText(),
-                    ControllerSignUpSureName.getText(), ControllerSignUpPhoneNumber.getText(), ControllerSignUpPinKod.getText());
-
-
+            signUpNewUsers();
             ControllerSignUpRegister.getScene().getWindow().hide();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("SignIn.fxml"));
@@ -62,5 +59,15 @@ public class ControllerSignUp {
             stage.show();
         });
     }
+
+    private void signUpNewUsers() {
+        dbConnection conn = new dbConnection();
+
+        User user = new User(ControllerSignUpLastName.getText(), ControllerSignUpFisrstName.getText(),
+                ControllerSignUpSureName.getText(), ControllerSignUpPhoneNumber.getText(), ControllerSignUpPinKod.getText());
+
+        conn.singUpUser(user);
+    }
+
 
 }

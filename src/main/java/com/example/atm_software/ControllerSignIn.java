@@ -2,6 +2,9 @@ package com.example.atm_software;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.SQLOutput;
 import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
@@ -39,7 +42,7 @@ public class ControllerSignIn {
             String phoneNumber = ControllerSingInPhone.getText().trim();
             String signInPinKod = ControllerSingInPinCode.getText().trim();
             if (!phoneNumber.equals("") || signInPinKod.equals("")) {
-                loginUser(phoneNumber,signInPinKod);
+                loginUser(phoneNumber, signInPinKod);
             } else {
                 System.out.println("Одно или несколько полей пустые!");
             }
@@ -64,7 +67,24 @@ public class ControllerSignIn {
         });
     }
 
-    private void loginUser(String phoneNumber, String signInPinKod) {
+    private void loginUser(String phoneNumber, String signInPinKod){
+        dbConnection dbSignIn = new dbConnection();
+        User user = new User();
+        user.setPhoneNumber(phoneNumber);
+        user.setPinKod(signInPinKod);
+        ResultSet receiving = dbSignIn.getUser(user);
 
+        int counter = 0;
+            while (true) {
+                try {
+                    if (!receiving.next()) break;
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+                counter++;
+            }
+        if (counter >= 1) {
+            System.out.println("Success!");
+        }
     }
 }
