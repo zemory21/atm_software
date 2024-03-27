@@ -26,6 +26,9 @@ public class ControllerOtherSum {
 
     @FXML
     void initialize() {
+        TakeOff.setOnAction(ActionEvent -> {
+
+        });
 
     }
 

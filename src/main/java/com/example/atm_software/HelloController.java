@@ -36,32 +36,25 @@ public class HelloController {
     @FXML
     void initialize() {
         ControllerSingInEnter.setOnAction(actionEvent -> {
+            ControllerSingInEnter.getScene().getWindow().hide();
+            Window global = new Window();
+            global.openWindow("GlobalWindow.fxml");
             
-            String phoneNumber = ControllerSingInPhone.getText().trim();
+            /*String phoneNumber = ControllerSingInPhone.getText().trim();
             String signInPinKod = ControllerSingInPinCode.getText().trim();
             if (!phoneNumber.equals("") && signInPinKod.equals("")) {
                 loginUser(phoneNumber,signInPinKod);
             } else {
                 System.out.println("Одно или несколько полей пустые!");
-            }
+            }*/
         });
 
         ControllerSingInRegister.setOnAction(actionEvent -> {
             //Открытие другого окна при нажатии на кнопку!
             ControllerSingInRegister.getScene().getWindow().hide();// скрытие окна после нажатия на кнопку Зарегистрироваться
 
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("SignUp.fxml")); // путь к окну которое будет окрываться после нажатия на кнопку
-
-            try {
-                loader.load();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
+            Window signUpWindow = new Window();
+            signUpWindow.openWindow("SignUp.fxml");
         });
     }
 

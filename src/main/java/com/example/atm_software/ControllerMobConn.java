@@ -28,6 +28,15 @@ public class ControllerMobConn {
 
     @FXML
     void initialize() {
+
+        CloseButton.setOnAction(ActionEvent -> {
+
+        });
+
+        TakeOffButton.setOnAction(ActionEvent -> {
+
+        });
+
     }
 
 }

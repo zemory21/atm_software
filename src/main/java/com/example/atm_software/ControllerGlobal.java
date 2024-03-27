@@ -2,6 +2,8 @@ package com.example.atm_software;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -34,6 +36,27 @@ public class ControllerGlobal {
 
     @FXML
     void initialize() {
+
+        ControllrGlobalTakeOff.setOnAction(ActionEvent -> {
+
+        });
+
+        ControllrGlobalToPay.setOnAction(ActionEvent -> {
+
+        });
+
+        ControllrGlobalInsert.setOnAction(ActionEvent -> {
+
+        });
+
+        ControllrGlobalSendAnotherBank.setOnAction(ActionEvent -> {
+
+        });
+
+        ControllrGlobalHistory.setOnAction(ActionEvent -> {
+
+        });
+
     }
 
 }

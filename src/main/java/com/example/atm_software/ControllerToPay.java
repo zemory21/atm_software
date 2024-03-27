@@ -25,6 +25,18 @@ public class ControllerToPay {
     @FXML
     void initialize() {
 
+        ControllerToPayBank.setOnAction(ActionEvent -> {
+
+        });
+
+        ControllerToPayMComm.setOnAction(ActionEvent -> {
+
+        });
+
+        ControllerToPayCard.setOnAction(ActionEvent -> {
+
+        });
+
     }
 
 }

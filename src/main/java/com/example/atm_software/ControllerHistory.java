@@ -23,6 +23,10 @@ public class ControllerHistory {
     @FXML
     void initialize() {
 
+        CloseButton.setOnAction(ActionEvent -> {
+
+        });
+
     }
 
 }

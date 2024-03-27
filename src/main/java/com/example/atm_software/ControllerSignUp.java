@@ -36,6 +36,11 @@ public class ControllerSignUp {
 
     @FXML
     void initialize() {
+
+        ControllerSignUpRegister.setOnAction(ActionEvent -> {
+
+        });
+
     }
 
 }

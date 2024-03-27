@@ -28,6 +28,15 @@ public class ControllerBankCard {
 
     @FXML
     void initialize() {
+
+        CloseButton.setOnAction(ActionEvent -> {
+
+        });
+
+        TakeOffButton.setOnAction(ActionEvent -> {
+
+        });
+
     }
 
 }

@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5878be1e-58a0-4f87-9285-86312f6b0e4c" name="Changes" comment="f">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerBankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerMobConn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerOtherBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerOtherSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/Logics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/Window.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerBankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerBankCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerGlobal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerGlobal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/History.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/History.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/Mob.swaz.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/MobConnection.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/Po ban.carte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/BankCard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/W drugoj bank.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/OtherBank.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/другая сумма.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/OtherSum.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerMobConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerMobConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerOtherSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerOtherSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerSignUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerTakeOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerTakeOff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerToPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/ControllerToPay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/atm_software/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/GlobalWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/GlobalWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/Insert.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/Insert.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/OtherSum.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/OtherSum.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/TakeOff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/TakeOff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/ToPay.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/atm_software/ToPay.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,22 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/zemor/OneDrive/Desktop/ /mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/zemor/OneDrive/Desktop/ /mysql-connector-j-8.3.0/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Java\практика\atm_software\src\main\resources\com\example\atm_software" />
@@ -97,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
         <item itemvalue="Application.HelloApplication" />
