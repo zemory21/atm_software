@@ -43,6 +43,8 @@ public class ControllerSignIn {
             String signInPinKod = ControllerSingInPinCode.getText().trim();
             if (!phoneNumber.equals("") || signInPinKod.equals("")) {
                 loginUser(phoneNumber, signInPinKod);
+                Window global = new Window();
+                global.openWindow("GlobalWindow.fxml");
             } else {
                 System.out.println("Одно или несколько полей пустые!");
             }
