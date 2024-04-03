@@ -38,6 +38,7 @@ public class dbConnection {
         }
     }
 
+
     public User getUser(String phoneNumber, String pinKod) {
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Connecting to database...");

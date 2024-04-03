@@ -26,7 +26,7 @@ public class ControllerHistory {
         CloseButton.setOnAction(ActionEvent -> {
             CloseButton.getScene().getWindow().hide();
             Window exit = new Window();
-            exit.openWindow("GlobalWindow.fxml");
+            exit.openWindow("GlobalWindow");
         });
 
     }

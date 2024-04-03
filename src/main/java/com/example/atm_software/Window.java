@@ -8,13 +8,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Window {
-<<<<<<< HEAD
-=======
 
->>>>>>> master
     void openWindow(String nameWindow){
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource(nameWindow)); // путь к окну которое будет окрываться после нажатия на кнопку
+        loader.setLocation(getClass().getResource(nameWindow+".fxml")); // путь к окну которое будет окрываться после нажатия на кнопку
 
         try {
             loader.load();
@@ -26,8 +23,5 @@ public class Window {
         stage.setScene(new Scene(root));
         stage.showAndWait();
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 }

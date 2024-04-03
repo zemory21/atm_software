@@ -13,7 +13,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class HelloController {
+public class ControllerSignIn {
 
     @FXML
     private ResourceBundle resources;
@@ -36,17 +36,13 @@ public class HelloController {
     @FXML
     void initialize() {
         ControllerSingInEnter.setOnAction(actionEvent -> {
-            ControllerSingInEnter.getScene().getWindow().hide();
-            Window global = new Window();
-            global.openWindow("GlobalWindow.fxml");
-            
-            /*String phoneNumber = ControllerSingInPhone.getText().trim();
+            String phoneNumber = ControllerSingInPhone.getText().trim();
             String signInPinKod = ControllerSingInPinCode.getText().trim();
-            if (!phoneNumber.equals("") && signInPinKod.equals("")) {
-                loginUser(phoneNumber,signInPinKod);
+            if (!phoneNumber.equals("") || signInPinKod.equals("")) {
+                loginUser(phoneNumber, signInPinKod);
             } else {
                 System.out.println("Одно или несколько полей пустые!");
-            }*/
+            }
         });
 
         ControllerSingInRegister.setOnAction(actionEvent -> {
@@ -54,10 +50,21 @@ public class HelloController {
             ControllerSingInRegister.getScene().getWindow().hide();// скрытие окна после нажатия на кнопку Зарегистрироваться
 
             Window signUpWindow = new Window();
-            signUpWindow.openWindow("SignUp.fxml");
+            signUpWindow.openWindow("SignUp");
         });
     }
 
     private void loginUser(String phoneNumber, String signInPinKod) {
+        dbConnection conn = new dbConnection();
+
+        User user = conn.getUser(phoneNumber, signInPinKod);
+        if (user != null) {
+            System.out.println("Пользователь авторизован!");
+            Window global = new Window();
+            ControllerSingInEnter.getScene().getWindow().hide();
+            global.openWindow("GlobalWindow");
+        } else {
+            System.out.println("Пользователь не найден!");
+        }
     }
 }

@@ -37,11 +37,19 @@ public class ControllerSignUp {
     @FXML
     void initialize() {
 
-        DatabaseHandler dbHandler = new DatabaseHandler();
-        ControllerSignUpRegister.setOnAction(actionEvent -> {
-            dbHandler.signUpUser(ControllerSignUpFisrstName.getText(), ControllerSignUpLastName.getText(), ControllerSignUpSureName.getText(), ControllerSignUpPinKod.getText(),
-                    ControllerSignUpPinKod.getText());
+        ControllerSignUpRegister.setOnAction(event -> {
+            signUpNewUsers();
+            ControllerSignUpRegister.getScene().getWindow().hide();
+            Window signIn = new Window();
+            signIn.openWindow("SignIn");
         });
+    }
+    private void signUpNewUsers() {
+        dbConnection conn = new dbConnection();
+
+        conn.singUpUser(ControllerSignUpLastName.getText(), ControllerSignUpFisrstName.getText(),
+                ControllerSignUpSureName.getText(), ControllerSignUpPhoneNumber.getText(), ControllerSignUpPinKod.getText());
+
     }
 
 }

@@ -40,32 +40,32 @@ public class ControllerGlobal {
         ControllrGlobalTakeOff.setOnAction(ActionEvent -> {
             ControllrGlobalTakeOff.getScene().getWindow().hide();
             Window takeOff = new Window();
-            takeOff.openWindow("TakeOff.fxml");
+            takeOff.openWindow("TakeOff");
 
         });
 
         ControllrGlobalToPay.setOnAction(ActionEvent -> {
             ControllrGlobalToPay.getScene().getWindow().hide();
             Window toPay = new Window();
-            toPay.openWindow("ToPay.fxml");
+            toPay.openWindow("ToPay");
         });
 
         ControllrGlobalInsert.setOnAction(ActionEvent -> {
             ControllrGlobalInsert.getScene().getWindow().hide();
             Window insert = new Window();
-            insert.openWindow("Insert.fxml");
+            insert.openWindow("Insert");
         });
 
         ControllrGlobalSendAnotherBank.setOnAction(ActionEvent -> {
             ControllrGlobalSendAnotherBank.getScene().getWindow().hide();
             Window otherBank = new Window();
-            otherBank.openWindow("OtherBank.fxml");
+            otherBank.openWindow("OtherBank");
         });
 
         ControllrGlobalHistory.setOnAction(ActionEvent -> {
             ControllrGlobalHistory.getScene().getWindow().hide();
             Window history = new Window();
-            history.openWindow("History.fxml");
+            history.openWindow("History");
         });
 
     }
