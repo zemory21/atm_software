@@ -43,6 +43,10 @@ public class ControllerSignIn {
             } else {
                 System.out.println("Одно или несколько полей пустые!");
             }
+            //вход без данных
+            /*Window global = new Window();
+            ControllerSingInEnter.getScene().getWindow().hide();
+            global.openWindow("GlobalWindow");*/
         });
 
         ControllerSingInRegister.setOnAction(actionEvent -> {

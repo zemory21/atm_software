@@ -9,9 +9,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #003;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_software.ControllerSignUp">
     <children>
-        <AnchorPane layoutY="86.0" prefHeight="364.0" prefWidth="700.0" style="-fx-background-color: #dddd;">
+        <AnchorPane layoutY="86.0" prefHeight="364.0" prefWidth="700.0" style="-fx-background-color: #fff;">
             <children>
-                <Label layoutX="208.0" layoutY="14.0" text="Регистрация" textFill="WHITE">
+                <Label layoutX="208.0" layoutY="14.0" text="Регистрация">
                     <font>
                         <Font name="Comfortaa Regular" size="38.0" />
                     </font>
@@ -21,7 +21,7 @@
                         <Font name="Comfortaa Regular" size="14.0" />
                     </font>
                 </PasswordField>
-                <Button fx:id="ControllerSignUpRegister" layoutX="246.0" layoutY="236.0" mnemonicParsing="false" text="Зарегистрироваться">
+                <Button fx:id="ControllerSignUpRegister" layoutX="246.0" layoutY="236.0" mnemonicParsing="false" style="-fx-background-radius: 10;" text="Зарегистрироваться">
                     <font>
                         <Font name="Comfortaa Regular" size="15.0" />
                     </font>

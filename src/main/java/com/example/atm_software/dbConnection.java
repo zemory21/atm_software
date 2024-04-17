@@ -8,6 +8,11 @@ public class dbConnection {
     static final String username = "root";
     static final String password = "12341324";
 
+    public static void main(String[] args) {
+        dbConnection dbConnection = new dbConnection();
+        dbConnection.getBalance();
+    }
+
     public void singUpUser(String lastname, String firstname, String surname, String phonenumber, String pinkod) {
         //Подключение к базе данных
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
@@ -31,7 +36,7 @@ public class dbConnection {
 
             prSt.executeUpdate();
             // Закрытие конекта к базе данных
-//            connection.close();
+            connection.close();
         } catch (SQLException e) {
             System.out.println("Error connecting to database: " + e.getMessage());
             e.printStackTrace();
@@ -60,11 +65,50 @@ public class dbConnection {
             } else {
                 return null;
             }
-
         } catch (SQLException e) {
             System.out.println("Error connecting to database: " + e.getMessage());
             e.printStackTrace();
             return null;
+        }
+    }
+    public int getBalance() {
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Connecting to database...");
+            if (!connection.isClosed()) {
+                System.out.println("Connected successfully!");
+            } else {
+                System.out.println("There is no connection!");
+            }
+            String insert = "SELECT lastname, firstname, surname, Balance " +
+                    "FROM users LEFT OUTER JOIN balance " +
+                    "ON userID = user";
+            var prst = connection.prepareStatement(insert);
+            ResultSet resultSet = prst.executeQuery();
+            int bal = Integer.parseInt(resultSet.getString(4));
+
+        } catch (SQLException e) {
+            System.out.println("Error connecting to database: " + e.getMessage());
+            e.printStackTrace();
+        }
+        return 0;
+    }
+
+    public void setBalance(String Balance) {
+        //Подключение к базе данных
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            System.out.println("Connecting to database...");
+            // Создание запроса
+            String request = "INSERT INTO balance(" + Const.Balance_BALANCE +")" + "VALUES(?)";
+            // Выполнение запроса
+            var prSt = connection.prepareStatement(request);
+            prSt.setString(1, Balance);
+
+            prSt.executeUpdate();
+            // Закрытие конекта к базе данных
+            connection.close();
+        } catch (SQLException e) {
+            System.out.println("Error connecting to database: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 

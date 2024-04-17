@@ -17,7 +17,7 @@ public class ControllerGlobal {
     private URL location;
 
     @FXML
-    private Label ControllerSingInEnter;
+    private Label balance;
 
     @FXML
     private Button ControllrGlobalHistory;
@@ -36,32 +36,32 @@ public class ControllerGlobal {
 
     @FXML
     void initialize() {
-
+        //снять
         ControllrGlobalTakeOff.setOnAction(ActionEvent -> {
             ControllrGlobalTakeOff.getScene().getWindow().hide();
             Window takeOff = new Window();
             takeOff.openWindow("TakeOff");
 
         });
-
+        //оплатить
         ControllrGlobalToPay.setOnAction(ActionEvent -> {
             ControllrGlobalToPay.getScene().getWindow().hide();
             Window toPay = new Window();
             toPay.openWindow("ToPay");
         });
-
+        //внести
         ControllrGlobalInsert.setOnAction(ActionEvent -> {
             ControllrGlobalInsert.getScene().getWindow().hide();
             Window insert = new Window();
             insert.openWindow("Insert");
         });
-
+        //другой банк
         ControllrGlobalSendAnotherBank.setOnAction(ActionEvent -> {
             ControllrGlobalSendAnotherBank.getScene().getWindow().hide();
             Window otherBank = new Window();
             otherBank.openWindow("OtherBank");
         });
-
+        //история
         ControllrGlobalHistory.setOnAction(ActionEvent -> {
             ControllrGlobalHistory.getScene().getWindow().hide();
             Window history = new Window();
@@ -70,6 +70,9 @@ public class ControllerGlobal {
 
     }
 
-
+    public void getScore(){
+        dbConnection dbConnection = new dbConnection();
+        int bal = dbConnection.getBalance();
+    }
 
 }

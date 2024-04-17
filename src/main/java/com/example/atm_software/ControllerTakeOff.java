@@ -15,28 +15,33 @@ public class ControllerTakeOff {
     private URL location;
 
     @FXML
-    private Button AllOperations;
-
-    @FXML
     private Label ControllerSingInEnter;
-
-    @FXML
-    private Button ExitButton;
-
-    @FXML
-    private Button FiveHundredButton;
-
-    @FXML
-    private Button FiveThousnd;
 
     @FXML
     private Button Other;
 
     @FXML
-    private Button ThreeFiveHundred;
+    private Button exitButton;
+
+    @FXML
+    private Button fiveTausend;
+
+    @FXML
+    private Button fivihundert;
+
+    @FXML
+    private Button oneTausend;
+
+    @FXML
+    private Button twoTausend;
 
     @FXML
     void initialize() {
+        Other.setOnAction(event -> {
+            Other.getScene().getWindow().hide();
+            Window window = new Window();
+            window.openWindow("otherSum");
+        });
 
     }
 

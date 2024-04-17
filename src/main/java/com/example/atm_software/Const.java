@@ -8,4 +8,6 @@ public class Const {
     public static final String USER_SURNAME = "surname";
     public static final String USER_PHONENUMBER = "phoneNumber";
     public static final String USER_PINKOD = "pinKod";
+    public static final String Balance_BALANCE = "balance";
+
 }

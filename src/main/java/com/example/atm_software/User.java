@@ -6,19 +6,20 @@ public class User {
     private String surname;
     private String phoneNumber;
     private String pinKod;
-
+    private String user;
+    private int Balance;
 
     public User(String phoneNumber, String pinKod) {
         this.phoneNumber = phoneNumber;
         this.pinKod = pinKod;
     }
-    /*public User(String lastname, String firstname, String surname, String phoneNumber, String pinKod) {
+    public User(String lastname, String firstname, String surname, String phoneNumber, String pinKod) {
         this.lastname = lastname;
         this.firstname = firstname;
         this.surname = surname;
         this.phoneNumber = phoneNumber;
         this.pinKod = pinKod;
-    }*/
+    }
 
     public String getLastname() {
         return lastname;
@@ -58,5 +59,21 @@ public class User {
 
     public void setPinKod(String pinKod) {
         this.pinKod = pinKod;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public int getBalance() {
+        return Balance;
+    }
+
+    public void setBalance(int balance) {
+        Balance = balance;
     }
 }
